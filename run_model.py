@@ -3,7 +3,7 @@ import pandas as pd
 import subprocess
 
 # Define the input vector X_input with the desired values
-X_input = np.array([0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 42])
+X_input = np.array([0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 42])
 
 # Optionally, create a batch of N input vectors (N copies of X_input)
 N = 3
