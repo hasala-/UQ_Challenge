@@ -8,7 +8,7 @@ from pathlib import Path
 
 # Step 1: Define input parameters to the model
 # Define the input vector X_input with the required values
-X_input = np.array([0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 42])
+X_input = np.array([0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 42])
 # Alternatively, the model also supports a batch of N input vectors (as an example, "N" copies of X_input)
 N = 3
 X_input_batch = np.tile(X_input, (N, 1))  # Shape will be (N, 9)

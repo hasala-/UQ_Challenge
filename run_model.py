@@ -14,8 +14,8 @@ input_file_path = 'input.txt'
 np.savetxt(input_file_path, X_input_batch, delimiter=',')
 print(f'Input data written to {input_file_path}')
 
-#exe_path = './local_model_dummy.exe'  # Path to the executable in the current folder
-exe_path = '/Users/hasal/OneDrive/UQ_Resources/local_model_dummy.exe'
+exe_path = './local_model_dummy.exe'  # Path to the executable in the current folder
+#exe_path = '/Users/hasal/OneDrive/UQ_Resources/local_model_windows.exe'
 command = [exe_path, input_file_path]
 
 print('Running simulation executable...')
