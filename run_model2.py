@@ -8,7 +8,7 @@ from pathlib import Path
 
 # Step 1: Define input parameters to the model
 # Define the input vector X_input with the required values
-X_input = np.array([0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 42])
+X_input = np.array([0.1, 0.2, 0.3, 0.4, 0.5, 0.1, 0.1, 0.0, 42])
 # Alternatively, the model also supports a batch of N input vectors (as an example, "N" copies of X_input)
 N = 3
 X_input_batch = np.tile(X_input, (N, 1))  # Shape will be (N, 9)
@@ -32,7 +32,7 @@ result = subprocess.run(command, capture_output=True, text=True)
 print(result.stdout)
 
 
-
+'''
 ## Section 2: Loading and post-processing the output
 
 # Step 1: Load the output data
@@ -53,3 +53,4 @@ Y_out = df.to_numpy().reshape(num_samples, 60, 6).transpose(1, 2, 0)
 # Step 4: As an example, Print the First Time Step for All 6 Output Features of Sample 3
 print('Output values for the first timestep for all 6 features of sample 3:')
 print(Y_out[0, :, 2])
+'''
