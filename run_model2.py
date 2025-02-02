@@ -32,7 +32,7 @@ result = subprocess.run(command, capture_output=True, text=True)
 print(result.stdout)
 
 
-'''
+
 ## Section 2: Loading and post-processing the output
 
 # Step 1: Load the output data
@@ -53,4 +53,3 @@ Y_out = df.to_numpy().reshape(num_samples, 60, 6).transpose(1, 2, 0)
 # Step 4: As an example, Print the First Time Step for All 6 Output Features of Sample 3
 print('Output values for the first timestep for all 6 features of sample 3:')
 print(Y_out[0, :, 2])
-'''
