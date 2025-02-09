@@ -27,8 +27,13 @@ Using Bayes Theorem:
 
 - Local model is executed using the run_model.py script, that takes samples form X variables in input3.txt file. Local model executable provided by the UQ Challenge organisers write output to Y_out.csv file.
 
-<h3>Outputs:</h3>
+<h3>Outputs:</h3>  
+
 - Priors - following histograms shows the prior samples created from the normal (for aleatory) and uniform (for epistemic) distributions. Only 100 samples were used initially since each sample required a local black-box model invocation.  
+![Alt Text](./priors.png)
+
+- Posteriors obtained after running the model - following diagrams show posterior distributions obtained after running the MCMC model.
+  ![Alt Text](./posterior.png)
 
 
 
